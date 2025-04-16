@@ -28,13 +28,20 @@ public class Board {
     }
 
 
+
+
+
     public Piece piece(int row, int column){
         return pieces[row][column];
     }
 
-    public Board(int column, int rows) {
+    public Board(int columns, int rows) {
         this.columns = columns;
         this.rows = rows;
-        pieces = new Piece[rows][columns];
+        this.pieces = new Piece[rows][columns];
+    }
+    public void placePiece(Piece piece, Position position){
+        pieces[position.getRow()][position.getColumn()] = piece;
+        piece.position = position;
     }
 }
