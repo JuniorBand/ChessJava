@@ -1,6 +1,5 @@
 package boardgame;
 
-import lombok.Getter;
 
 public abstract class Piece {
 
