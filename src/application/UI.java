@@ -1,4 +1,4 @@
-package application;
+package jdbc1.application;
 
 import chess.ChessPiece;
 import chess.ChessPosition;
